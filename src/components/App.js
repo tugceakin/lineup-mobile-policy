@@ -10,17 +10,22 @@ import s from '../styles/app.style';
 export default function App() {
   return (
     <div style={s.root}>
-      <h1 style={s.title}>Single Page Apps for GitHub Pages</h1>
-      <Interactive
+      <h1
+        style={{
+          fontSize: 26,
+          fontWeight: 'bold',
+        }}
+      >Privacy Policy</h1>
+      {/* <Interactive
         as="a"
         href="https://github.com/rafrex/spa-github-pages"
         style={s.repoLink}
         {...s.link}
-      >https://github.com/rafrex/spa-github-pages</Interactive>
+      >https://github.com/rafrex/spa-github-pages</Interactive> */}
 
-      <nav style={s.breadcrumbs}>
+      {/* <nav style={s.breadcrumbs}>
         <Breadcrumbs />
-      </nav>
+      </nav> */}
 
       <Switch>
         <Route exact path="/" component={Home} />
@@ -28,7 +33,7 @@ export default function App() {
         <Route component={PageNotFound} />
       </Switch>
 
-      <div style={s.creditLine}>
+      {/* <div style={s.creditLine}>
         <Interactive
           as="a"
           href="http://www.rafaelpedicini.com"
@@ -39,7 +44,7 @@ export default function App() {
         >
           Code and concept by <span {...s.childLink}>Rafael Pedicini</span>
         </Interactive>
-      </div>
+      </div> */}
     </div>
   );
 }
